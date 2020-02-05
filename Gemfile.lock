@@ -132,6 +132,8 @@ GEM
     omniauth (1.9.0)
       hashie (>= 3.4.6, < 3.7.0)
       rack (>= 1.6.2, < 3)
+    omniauth-facebook (6.0.0)
+      omniauth-oauth2 (~> 1.2)
     omniauth-google-oauth2 (0.2.10)
       addressable (~> 2.3)
       jwt (~> 1.0)
@@ -253,6 +255,7 @@ DEPENDENCIES
   devise_token_auth
   factory_bot_rails
   listen (>= 3.0.5, < 3.2)
+  omniauth-facebook
   omniauth-google-oauth2 (~> 0.2.2)
   pg (>= 0.18, < 2.0)
   pry-byebug
