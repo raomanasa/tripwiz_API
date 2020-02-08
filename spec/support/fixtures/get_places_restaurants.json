@@ -1,0 +1,210 @@
+{
+  "html_attributions": [],
+  "results": [
+     {
+        "geometry": {
+           "location": {
+              "lat": 59.3343398,
+              "lng": 18.058366
+           },
+           "viewport": {
+              "northeast": {
+                 "lat": 59.33565392989273,
+                 "lng": 18.05974997989272
+              },
+              "southwest": {
+                 "lat": 59.33295427010729,
+                 "lng": 18.05705032010728
+              }
+           }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+        "id": "83c4810a227c0f5413424fc9bcc593e7972db0ab",
+        "name": "China Wang",
+        "opening_hours": {
+           "open_now": true
+        },
+        "photos": [
+           {
+              "height": 3024,
+              "html_attributions": [
+                 "<a href=\"https://maps.google.com/maps/contrib/105259300927862790388\">Alexander RAM</a>"
+              ],
+              "photo_reference": "CmRaAAAAs-cC0Klj56O64QWr1LNBrVctlCISw9TWsDhck8Mhn-NVq0sxWbXtjtH0rBWwo2cwXsUC31ToOz5TOkXYl-XY0xdZEZyX2NT-v8eKBmtKezy_NDhOI0xY8dvQr052fKC2EhAZ29E4vYm9tzTDb7Ha3DARGhQlrn_UVAzCl6hgolPYuD4fNMpHaw",
+              "width": 4032
+           }
+        ],
+        "place_id": "ChIJ0QXlLmedX0YRwMASZ96Jliw",
+        "plus_code": {
+           "compound_code": "83M5+P8 Stockholm",
+           "global_code": "9FFW83M5+P8"
+        },
+        "price_level": 2,
+        "rating": 3.5,
+        "reference": "ChIJ0QXlLmedX0YRwMASZ96Jliw",
+        "scope": "GOOGLE",
+        "types": [
+           "restaurant",
+           "food",
+           "point_of_interest",
+           "establishment"
+        ],
+        "user_ratings_total": 448,
+        "vicinity": "Kungsgatan 62, Stockholm"
+     },
+     {
+        "geometry": {
+           "location": {
+              "lat": 59.33780700000001,
+              "lng": 18.077826
+           },
+           "viewport": {
+              "northeast": {
+                 "lat": 59.33911852989272,
+                 "lng": 18.07914282989272
+              },
+              "southwest": {
+                 "lat": 59.33641887010728,
+                 "lng": 18.07644317010728
+              }
+           }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+        "id": "187d9da9fe4252110c148e946ba51b73faa27eb5",
+        "name": "Restaurang Hongkist",
+        "opening_hours": {
+           "open_now": true
+        },
+        "photos": [
+           {
+              "height": 1984,
+              "html_attributions": [
+                 "<a href=\"https://maps.google.com/maps/contrib/110990450974209246811\">A Google User</a>"
+              ],
+              "photo_reference": "CmRaAAAAney75r4U32CTpz-QiXJ1WUlWlLBlR_-H-zF2Nih-qvNr2UAWpvDqXP9trS12_SNNbl6F-5gKY6-nLs_9P5FvQQFlMr00HIF8U_HmmfHqC4tY8hvoJOkp6hBWgfWU4bCCEhAPbGhdTM2MYPUcdMP3Z_2RGhRTVnhviYHmI0Ke6zrYdDvIEOwUvw",
+              "width": 2976
+           }
+        ],
+        "place_id": "ChIJk_UMuESdX0YR72Xhe4_ryxw",
+        "plus_code": {
+           "compound_code": "83QH+44 Stockholm",
+           "global_code": "9FFW83QH+44"
+        },
+        "price_level": 2,
+        "rating": 4.1,
+        "reference": "ChIJk_UMuESdX0YR72Xhe4_ryxw",
+        "scope": "GOOGLE",
+        "types": [
+           "restaurant",
+           "food",
+           "point_of_interest",
+           "establishment"
+        ],
+        "user_ratings_total": 155,
+        "vicinity": "Linnégatan 13, Stockholm"
+     },
+     {
+        "geometry": {
+           "location": {
+              "lat": 59.331123,
+              "lng": 18.0503542
+           },
+           "viewport": {
+              "northeast": {
+                 "lat": 59.33247792989271,
+                 "lng": 18.05172097989272
+              },
+              "southwest": {
+                 "lat": 59.32977827010727,
+                 "lng": 18.04902132010728
+              }
+           }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+        "id": "78129c68b1ac3ddf3f7c8353f7d0e6817dcac093",
+        "name": "Restaurang Hongkong",
+        "opening_hours": {
+           "open_now": true
+        },
+        "photos": [
+           {
+              "height": 3024,
+              "html_attributions": [
+                 "<a href=\"https://maps.google.com/maps/contrib/111031201006759061871\">A Google User</a>"
+              ],
+              "photo_reference": "CmRaAAAAyF0yhZm7XV_zvj5HS2AfR-SG0IvmKruLGLMwXUsi2trNiswa_Ovql3MYjzV11X3luHnvFO6JMQ_VVj__uFMxzdSZjkegxIoupXzXfGe8ZfNUZwHBBrEL1lDGRaMZbt-rEhCISfNkj6cMiSha0JG1BTpOGhRi7yeVAf-OhEe1rp4w5aUnfGHJwQ",
+              "width": 4032
+           }
+        ],
+        "place_id": "ChIJDQAChmGdX0YRqPcNbO_D1xs",
+        "plus_code": {
+           "compound_code": "83J2+C4 Stockholm",
+           "global_code": "9FFW83J2+C4"
+        },
+        "price_level": 2,
+        "rating": 4,
+        "reference": "ChIJDQAChmGdX0YRqPcNbO_D1xs",
+        "scope": "GOOGLE",
+        "types": [
+           "restaurant",
+           "food",
+           "point_of_interest",
+           "establishment"
+        ],
+        "user_ratings_total": 248,
+        "vicinity": "Kungsbro strand 23, Stockholm"
+     },
+     {
+        "geometry": {
+           "location": {
+              "lat": 59.3320346,
+              "lng": 18.0625375
+           },
+           "viewport": {
+              "northeast": {
+                 "lat": 59.33332152989273,
+                 "lng": 18.06369012989272
+              },
+              "southwest": {
+                 "lat": 59.33062187010728,
+                 "lng": 18.06099047010728
+              }
+           }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+        "id": "d05aa2133e1e883bc7811068ef52f8b3dcc15c23",
+        "name": "Tang",
+        "opening_hours": {
+           "open_now": true
+        },
+        "photos": [
+           {
+              "height": 4000,
+              "html_attributions": [
+                 "<a href=\"https://maps.google.com/maps/contrib/103900548274256479457\">103900548274256479457</a>"
+              ],
+              "photo_reference": "CmRaAAAAMeyFfXNJUNMKXh_UmZqRtwW7eYweRuy_32nS6m2bs2ZC_ObVPJhxDXTeIkBuTOwm1I-wAx1Nc-JiRi8zYs7XytKRBRm_MMmhbPw_TYFDqVfZZqFwcmjBL5moGmWFEDSNEhDX18RiZGtpf7K1YEFKRJN4GhRRtgBunFbRSKv-7_ysNbqiKIfScw",
+              "width": 3000
+           }
+        ],
+        "place_id": "ChIJWwmjFl6dX0YRhRGYyR5fkUU",
+        "plus_code": {
+           "compound_code": "83J7+R2 Stockholm",
+           "global_code": "9FFW83J7+R2"
+        },
+        "price_level": 2,
+        "rating": 3.8,
+        "reference": "ChIJWwmjFl6dX0YRhRGYyR5fkUU",
+        "scope": "GOOGLE",
+        "types": [
+           "restaurant",
+           "food",
+           "point_of_interest",
+           "establishment"
+        ],
+        "user_ratings_total": 942,
+        "vicinity": "Klarabergsgatan 25, Stockholm"
+     }
+  ],
+  "status": "OK"
+}
