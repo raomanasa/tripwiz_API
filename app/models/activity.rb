@@ -1,11 +1,13 @@
+# frozen_string_literal: true
+
 class Activity < ApplicationRecord
   validates_presence_of :name, :address, :rating, :lat, :lng
 
   belongs_to :activity_type
 
-  def self.create_activities(activity_type, number_of_activities)
+  def self.create_activities(activity_type, number_of_activities, search_keyword)
     activities = []
-    response = Activity.get_activities(activity_type)
+    response = Activity.get_activities(activity_type, search_keyword)
 
     if response['results'].length >= number_of_activities.to_i
 
@@ -34,16 +36,20 @@ class Activity < ApplicationRecord
 
   private
 
-  def self.get_activities(activity_type)
-    radius = 5000
+  def self.get_activities(activity_type, search_keyword)
+    radius = 10000
     lat = activity_type.trip.lat
     lng = activity_type.trip.lng
+    max_price = activity_type.max_price if activity_type.max_price
+
+    params = { location: "#{lat},#{lng}",
+               type: activity_type.activity_type,
+               radius: radius,
+               max_price: max_price,
+               keyword: search_keyword,
+               key: Rails.application.credentials.google_api_token }
 
     url = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?'
-    response = JSON.parse RestClient.get url,
-                                         params: { location: "#{lat},#{lng}",
-                                                   type: activity_type.activity_type,
-                                                   radius: radius,
-                                                   key: Rails.application.credentials.google_api_token }
+    response = JSON.parse RestClient.get url, params: params.compact
   end
 end
