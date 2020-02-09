@@ -20,6 +20,10 @@ RSpec.describe 'POST /api/v1/activity_type', type: :request do
     it 'returns 3 activities' do
       expect(response_json.length).to eq 3
     end
+
+    it 'activities are sorted by rating' do
+      expect(response_json[0]['rating']).to eq "4.5"
+    end
   end
 
   describe 'Successfully creates restaurants' do
