@@ -2,11 +2,14 @@
 
 class Api::V1::ActivityTypesController < ApplicationController
   def create
-    activity_type = create_activity_type 
+    activity_type = create_activity_type
     activity_visits = set_activity_visits
     search_keyword = params[:keyword]
 
-    activities = ActivityCreator.new(activity_type, activity_visits, search_keyword).as_json['activities']
+    activities = ActivityCreator.new(activity_type,
+                                     activity_visits,
+                                     search_keyword)
+                                .as_json['activities']
 
     if activities && activities.length == activity_visits.to_i
       render json: activities, status: 200
@@ -28,9 +31,9 @@ class Api::V1::ActivityTypesController < ApplicationController
 
   def create_activity_type
     activity_type = ActivityType.create(activity_type: params.require(:activity_type),
-                        trip_id: params.require(:trip),
-                        max_price: params[:max_price])
-                        
+                                        trip_id: params.require(:trip),
+                                        max_price: params[:max_price])
+
     if activity_type.persisted?
       activity_type
     else

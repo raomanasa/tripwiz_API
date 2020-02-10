@@ -30,12 +30,11 @@ class ActivityCreator
   def get_activities
     lat = @activity_type.trip.lat
     lng = @activity_type.trip.lng
-    max_price = @activity_type.max_price if @activity_type.max_price
 
     params = { location: "#{lat},#{lng}",
                type: @activity_type.activity_type,
                radius: @radius,
-               max_price: @max_price,
+               max_price: @activity_type.max_price,
                keyword: @search_keyword,
                key: Rails.application.credentials.google_api_token }
 
