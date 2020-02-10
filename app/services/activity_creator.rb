@@ -59,6 +59,6 @@ module ActivityCreator
   end
 
   def sort_by_rating(result)
-    result.sort_by { |res| res['rating'] }.reverse
+    result.sort_by { |res| res['rating'].to_f }.reverse
   end
 end
