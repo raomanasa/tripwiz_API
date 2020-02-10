@@ -1,15 +1,14 @@
 # frozen_string_literal: true
 
 class Api::V1::ActivityTypesController < ApplicationController
+  include ActivityCreator
+  
   def create
     activity_type = create_activity_type
     activity_visits = set_activity_visits
     search_keyword = params[:keyword]
 
-    activities = ActivityCreator.new(activity_type,
-                                     activity_visits,
-                                     search_keyword)
-                                .as_json['activities']
+    activities = create_activities(activity_type, activity_visits, search_keyword)
 
     if activities && activities.length == activity_visits.to_i
       render json: activities, status: 200

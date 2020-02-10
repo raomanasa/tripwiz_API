@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-class ActivityCreator
-  def initialize(activity_type, activity_visits, search_keyword)
+module ActivityCreator
+  def create_activities(activity_type, activity_visits, search_keyword)
     @activities = []
     @activity_type = activity_type
     @activity_visits = activity_visits
