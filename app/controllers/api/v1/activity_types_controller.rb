@@ -6,7 +6,7 @@ class Api::V1::ActivityTypesController < ApplicationController
     activity_visits = set_activity_visits
     search_keyword = params[:keyword]
 
-    activities = Activity.create_activities(activity_type, activity_visits, search_keyword) 
+    activities = ActivityCreator.new(activity_type, activity_visits, search_keyword).as_json['activities']
 
     if activities && activities.length == activity_visits.to_i
       render json: activities, status: 200
