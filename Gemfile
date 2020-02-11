@@ -10,7 +10,6 @@ gem 'bootsnap', '>= 1.4.2', require: false
 gem 'rack-cors', require: 'rack/cors'
 gem 'rest-client'
 gem 'devise_token_auth'
-gem 'omniauth-facebook'
 
 group :development, :test do
   gem 'rspec-rails'
