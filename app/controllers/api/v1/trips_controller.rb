@@ -15,6 +15,18 @@ class Api::V1::TripsController < ApplicationController
     end
   end
 
+  def show
+    trip = Trip.find(params[:id])
+    activities = {}
+    trip.activity_types.each do |type|
+      activities[type.activity_type] = Activity.where(activity_type_id: type)
+    end
+    hotels = Hotel.where(trip_id: params[:id])
+
+    response = { trip: trip, activity: activities, hotels: hotels }
+    render json: response
+  end
+
   private
 
   def get_destination(params)
