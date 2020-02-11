@@ -56,7 +56,8 @@ class Api::V1::HotelsController < ApplicationController
   end
 
   def destroy
-    hotels_to_discard = Hotel.where.not(id: params[:hotel_id])
+    trip_hotels = Hotel.where(trip_id: params[:trip])
+    hotels_to_discard = trip_hotels.where.not(id: params[:hotel_id])
     Hotel.destroy(hotels_to_discard.ids)
     render head: :ok
   end
