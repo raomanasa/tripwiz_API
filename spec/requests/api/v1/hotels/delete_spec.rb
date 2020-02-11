@@ -12,15 +12,15 @@ RSpec.describe 'DELETE /api/v1/hotels', type: :request do
     it 'that are not chosen are deleted' do
       delete '/api/v1/hotels',
              params: { hotel_id: trip.hotels.first.id,
-            trip: trip.id }
-            
+                       trip: trip.id }
+
       expect(trip.hotels.length).to eq 1
     end
 
     it 'that belong to other trips are not deleted' do
       delete '/api/v1/hotels',
              params: { hotel_id: trip.hotels.first.id,
-              trip: trip.id }
+                       trip: trip.id }
 
       expect(other_trip.hotels.empty?).to eq false
     end
