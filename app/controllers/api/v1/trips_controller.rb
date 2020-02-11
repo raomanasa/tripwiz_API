@@ -8,13 +8,23 @@ class Api::V1::TripsController < ApplicationController
                        lng: params[:lng],
                        days: params[:days])
 
-
-
     if trip.persisted?
       render json: trip
     else
       render json: { error: trip.errors.full_messages }, status: 422
     end
+  end
+
+  def show
+    trip = Trip.find(params[:id])
+    activities = {}
+    trip.activity_types.each do |type|
+      activities[type.activity_type] = Activity.where(activity_type_id: type)
+    end
+    hotels = Hotel.where(trip_id: params[:id])
+
+    response = { trip: trip, activity: activities, hotels: hotels }
+    render json: response
   end
 
   private

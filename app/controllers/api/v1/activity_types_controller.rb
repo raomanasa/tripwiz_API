@@ -2,7 +2,7 @@
 
 class Api::V1::ActivityTypesController < ApplicationController
   include ActivityCreator
-  
+
   def create
     activity_type = create_activity_type
     activity_visits = set_activity_visits
@@ -16,6 +16,15 @@ class Api::V1::ActivityTypesController < ApplicationController
       activity_type.destroy
       render json: { error: 'Failed to create activity.' }, status: 422
     end
+  end
+
+  def index
+    activity_types = ActivityType.where(trip_id: params[:trip])
+    activities = {}
+    activity_types.each do |type|
+      activities[type.activity_type] = Activity.where(activity_type_id: type)
+    end
+    render json: activities, status: 200
   end
 
   private
