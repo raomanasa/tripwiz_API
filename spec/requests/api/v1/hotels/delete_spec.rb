@@ -11,7 +11,7 @@ RSpec.describe 'DELETE /api/v1/hotels', type: :request do
       delete '/api/v1/hotels',
              params: { hotel_id: trip.hotels.first.id }
 
-      expect(response.status).to eq 204
+      expect(response.status).to eq 200
     end
   end
 end
