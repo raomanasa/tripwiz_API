@@ -8,7 +8,6 @@ class Api::V1::ActivityTypesController < ApplicationController
 
     if activity_type.persisted?
       activities = Activity.create_activities(activity_type, number_of_activities)
-
       if activities && activities.length == number_of_activities.to_i
         render json: activities, status: 200
       else

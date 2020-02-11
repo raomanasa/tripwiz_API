@@ -58,6 +58,7 @@ GEM
       zeitwerk (~> 2.2)
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
+    amadeus (3.3.0)
     bootsnap (1.4.5)
       msgpack (~> 1.0)
     builder (3.2.4)
@@ -231,6 +232,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  amadeus
   bootsnap (>= 1.4.2)
   coveralls
   factory_bot_rails
@@ -244,6 +246,7 @@ DEPENDENCIES
   rest-client
   rspec-rails
   shoulda-matchers
+  simplecov
   spring
   spring-watcher-listen (~> 2.0.0)
   webmock

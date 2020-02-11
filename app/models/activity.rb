@@ -27,7 +27,6 @@ class Activity < ApplicationRecord
 
         activities << activity if activity.persisted?
       end
-
       activities
     end
   end
