@@ -1,3 +1,5 @@
+require 'simplecov'
+SimpleCov.start
 require  'coveralls'
 Coveralls.wear_merged!('rails')
 
@@ -20,4 +22,5 @@ RSpec.configure do |config|
   config.include(FactoryBot::Syntax::Methods)
   config.include(Shoulda::Matchers::ActiveRecord, type: :model)
   config.include(ResponseJSON)
+  config.include(WebmockStubs)
 end
