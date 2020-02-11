@@ -5,7 +5,7 @@ Rails.application.routes.draw do
     namespace :v1, defaults: { format: :json } do
       resources :trips, only: [:create]
       resources :hotels, only: %i[create index]
-      match 'hotels', to: 'hotels#destroy', via: 'delete'
+      delete 'hotels', to: 'hotels#destroy'
       resources :activity_types, only: [:create]
     end
   end
