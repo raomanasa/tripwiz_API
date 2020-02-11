@@ -8,6 +8,7 @@
         }
       },
       "name": "Stockholms Medeltidsmuseum",
+      "place_id": "ChIJZ3Kvw1idX0YRyZj7EjBP_eg",
       "rating": 4.4,
       "vicinity": "Strömparterren 3, Stockholm"
     },
@@ -19,6 +20,7 @@
         }
       },
       "name": "The Royal Palace",
+      "place_id": "ChIJAUpMflidX0YRNj52SJZ6-b0",
       "rating": 4.5,
       "vicinity": "Slottsbacken 1, Stockholm"
     },
@@ -30,6 +32,7 @@
         }
       },
       "name": "Medelhavsmuseet",
+      "place_id": "ChIJ77EGJ1-dX0YRa3zx4WKOYpo",
       "rating": 4.3,
       "vicinity": "Fredsgatan 2, Stockholm"
     }
