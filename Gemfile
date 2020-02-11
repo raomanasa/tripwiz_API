@@ -9,7 +9,7 @@ gem 'puma', '~> 4.1'
 gem 'bootsnap', '>= 1.4.2', require: false
 gem 'rack-cors', require: 'rack/cors'
 gem 'rest-client'
-
+gem 'amadeus'
 
 group :development, :test do
   gem 'rspec-rails'
@@ -19,6 +19,7 @@ group :development, :test do
   gem 'pry-byebug'
   gem 'coveralls',  require:  false
   gem 'webmock'
+  gem 'simplecov', require: false
 end
 
 group :development do

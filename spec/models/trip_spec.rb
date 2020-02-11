@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 RSpec.describe Trip, type: :model do
   describe 'Database table' do
     it { is_expected.to have_db_column :destination }
@@ -16,5 +18,3 @@ RSpec.describe Trip, type: :model do
     end
   end
 end
-
-

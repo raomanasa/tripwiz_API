@@ -3,8 +3,8 @@ FactoryBot.define do
     name { "Museum" }
     address { "Stockholmsgatan 1, Stockholm" }
     rating { "4.2" }
-    lat { "55.123" }
-    lng { "12.345" }
+    lat { "59.32#{rand(100)}" }
+    lng { "18.06#{rand(100)}" }
     association :activity_type
   end
 end

@@ -14,3 +14,4 @@ RSpec.describe 'GET /api/v1/activity_types', type: :request do
     end
   end
 end
+
