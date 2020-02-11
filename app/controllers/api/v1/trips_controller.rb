@@ -8,6 +8,8 @@ class Api::V1::TripsController < ApplicationController
                        lng: params[:lng],
                        days: params[:days])
 
+
+
     if trip.persisted?
       render json: trip
     else
