@@ -57,7 +57,7 @@ class Api::V1::HotelsController < ApplicationController
 
   def destroy
     hotels_to_discard = Hotel.where.not(id: params[:hotel_id])
-    Hotel.destroy(hotels_to_discard.ids)
+    Hotel.destroy(hotels_to_discard.ids), status: 200
   end
 
   private
